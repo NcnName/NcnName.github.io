@@ -38,6 +38,26 @@ LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control s
 ## Request : Move around and find out where the refrigerator is
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Background
 The paper "On Computable Numbers, with an Application to the Entscheidungsproblem" was published by Alan Turing in 1936. In this groundbreaking paper, Turing introduced the concept of a universal computing machine, now known as the Turing machine.
 
