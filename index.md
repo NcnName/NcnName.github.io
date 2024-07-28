@@ -33,10 +33,10 @@ LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control s
 ---
 ## Request : Turn 360 degree
 
-![Test-360 1](/static/image/Request-turn3601.gif)
-![Test-360 2](/static/image/Request-turn3602.gif)
-![Test-360 3](/static/image/Request-turn3603.gif)
-![Test-360 4](/static/image/Request-turn3604.gif)
+![Test-360 1](/static/image/test9.gif)
+![Test-360 2](/static/image/test10.gif)
+![Test-360 3](/static/image/test11.gif)
+![Test-360 4](/static/image/test12.gif)
 
 ---
 
