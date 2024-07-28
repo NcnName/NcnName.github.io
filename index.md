@@ -33,19 +33,19 @@ LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control s
 ---
 ## Request : Turn 360 degree
 
-![Test-360 1](/static/image/Request-turn 360 1.gif)
-![Test-360 2](/static/image/Request-turn 360 2.gif)
-![Test-360 3](/static/image/Request-turn 360 3.gif)
-![Test-360 4](/static/image/Request-turn 360 4.gif)
+![Test-360 1](/static/image/Request-turn3601.gif)
+![Test-360 2](/static/image/Request-turn3602.gif)
+![Test-360 3](/static/image/Request-turn3603.gif)
+![Test-360 4](/static/image/Request-turn3604.gif)
 
 ---
 
 ---
 ## Request : Move around and find out where the refrigerator is
-![Test-r1](/static/image/Request-refrigerator1.gif)
-![Test-r2](/static/image/Request-refrigerator2.gif)
-![Test-r3](/static/image/Request-refrigerator3.gif)
-![Test-r4](/static/image/Request-refrigerator4.gif)
+![Test-r10](/static/image/Request-refrigerator1.gif)
+![Test-r20](/static/image/Request-refrigerator2.gif)
+![Test-r30](/static/image/Request-refrigerator3.gif)
+![Test-r40](/static/image/Request-refrigerator4.gif)
 
 ---
 
