@@ -18,13 +18,13 @@ data: https://huggingface.co/docs/datasets
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control system designed to autonomously plan, task, and analyze external environments based on user requirements, leveraging an LLM-Agent. Utilizing a dual-agent framework, LA-RCS generates plans based on user requests, executes these plans while observing the external environment, and modifies the plans as needed to adapt to external conditions, ensuring user requests are satisfactorily fulfilled. By autonomously evaluating observations, providing feedback on its actions, and continuously executing commands based on ongoing environmental monitoring, this system significantly reduces the need for user intervention. Consequently, LA-RCS interprets user natural language commands and translates them into commands compatible with the robot's interface, enabling the robot to execute the tasks. We categorized the scenarios that LA-RCS needs to perform into four distinct types and conducted a quantitative assessment of its performance in each scenario. The results showed an average success rate of 85%, demonstrating the system's capability to fulfill user requests satisfactorily. For more extensive results, please visit our project page: [Github](https://www.Github.com/blabladd)
+LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control system designed to autonomously plan, task, and analyze external environments based on user requirements, leveraging an LLM-Agent. Utilizing a dual-agent framework, LA-RCS generates plans based on user requests, executes these plans while observing the external environment, and modifies the plans as needed to adapt to external conditions, ensuring user requests are satisfactorily fulfilled. By autonomously evaluating observations, providing feedback on its actions, and continuously executing commands based on ongoing environmental monitoring, this system significantly reduces the need for user intervention. Consequently, LA-RCS interprets user natural language commands and translates them into commands compatible with the robot's interface, enabling the robot to execute the tasks. We categorized the scenarios that LA-RCS needs to perform into four distinct types and conducted a quantitative assessment of its performance in each scenario. The results showed an average success rate of 85%, demonstrating the system's capability to fulfill user requests satisfactorily. For more extensive results, please visit our project page: [Github](https://www.Github.com/blabladd) 
         </div>
     </div>
 </div>
 
 ---
-
+## Request : Move forward avoiding obstacles
 ![Test1](/static/image/test1.gif)
 ![Test2](/static/image/test2.gif)
 ![Test3](/static/image/test3.gif)
