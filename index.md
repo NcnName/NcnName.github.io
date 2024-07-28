@@ -2,8 +2,7 @@
 layout: project_page
 permalink: /
 
-title: LA-RCS 
-(LLM-Agent Based Robot Operating System)
+title: LA-RCS (LLM-Agent Based Robot Operating System)
 authors:
     Teak-Hyun Park, Seung-Hun Shin, Young-Jun Choi
 affiliations:
