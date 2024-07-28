@@ -36,6 +36,11 @@ LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control s
 
 ---
 ## Request : Move around and find out where the refrigerator is
+![Test-r1](/static/image/Request-refrigerator1.gif)
+![Test-r2](/static/image/Request-refrigerator2.gif)
+![Test-r3](/static/image/Request-refrigerator3.gif)
+![Test-r4](/static/image/Request-refrigerator4.gif)
+
 ---
 
 
