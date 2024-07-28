@@ -26,7 +26,10 @@ www.Github.com/blabladd
 
 ---
 
-![Test](/static/image/test1.gif)
+![Test1](/static/image/test1.gif)
+![Test2](/static/image/test2.gif)
+![Test3](/static/image/test3.gif)
+![Test4](/static/image/test4.gif)
 
 ## Background
 The paper "On Computable Numbers, with an Application to the Entscheidungsproblem" was published by Alan Turing in 1936. In this groundbreaking paper, Turing introduced the concept of a universal computing machine, now known as the Turing machine.
