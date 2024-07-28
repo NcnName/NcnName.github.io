@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: On Computable Numbers, with an Application to the Entscheidungsproblem
+title: An Computable Numbers, with an Application to the Entscheidungsproblem
 authors:
     A. M. Turing
 affiliations:
