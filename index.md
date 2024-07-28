@@ -6,7 +6,7 @@ title: LA-RCS (LLM-Agent Based Robot Operating System)
 authors:
     Teak-Hyun Park, Seung-Hun Shin, Young-Jun Choi
 affiliations:
-    King's College, Cambridge
+    National Korea Maritime & Ocean University
 paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
 video: https://www.youtube.com/results?search_query=turing+machine
 code: https://github.com/topics/turing-machines
