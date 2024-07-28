@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: An Computable Numbers, with an Application to the Entscheidungsproblem
+title: LA-RCS
 authors:
     A. M. Turing
 affiliations:
