@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: LA-RCS
+title: LA-RCS : LLM-Agent Based Robot Operating System
 authors:
     A. M. Turing
 affiliations:
