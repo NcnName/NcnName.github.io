@@ -2,14 +2,14 @@
 layout: project_page
 permalink: /
 
-title: LA-RCS (LLM-Agent Based Robot Operating System)
+title: LA-RCS (LLM-Agent Based Robot Control System)
 authors:
-    Teak-Hyun Park, Seung-Hun Shin, Young-Jun Choi
+    Teak-Hyun Park, Seung-Hun Shin, Young-Jun Choi, , Kwangil Lee
 affiliations:
-    National Korea Maritime & Ocean University
+    National Korea Maritime & Ocean University, Republic of Korea Navy
 paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
 video: https://www.youtube.com/results?search_query=turing+machine
-code: https://github.com/topics/turing-machines
+code: https://github.com/Forharu40/kmou2024_team3_robot
 data: https://huggingface.co/docs/datasets
 ---
 
@@ -18,40 +18,32 @@ data: https://huggingface.co/docs/datasets
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control system designed to autonomously plan, task, and analyze external environments based on user requirements, leveraging an LLM-Agent. Utilizing a dual-agent framework, LA-RCS generates plans based on user requests, executes these plans while observing the external environment, and modifies the plans as needed to adapt to external conditions, ensuring user requests are satisfactorily fulfilled. By autonomously evaluating observations, providing feedback on its actions, and continuously executing commands based on ongoing environmental monitoring, this system significantly reduces the need for user intervention. Consequently, LA-RCS interprets user natural language commands and translates them into commands compatible with the robot's interface, enabling the robot to execute the tasks. We categorized the scenarios that LA-RCS needs to perform into four distinct types and conducted a quantitative assessment of its performance in each scenario. The results showed an average success rate of 85%, demonstrating the system's capability to fulfill user requests satisfactorily. For more extensive results, please visit our project page: <a href="https://www.Github.com/blabladd" target="_blank">Github</a>
+LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control system designed to autonomously plan, task, and analyze external environments based on user requirements, leveraging an LLM-Agent. Utilizing a dual-agent framework, LA-RCS generates plans based on user requests, executes these plans while observing the external environment, and modifies the plans as needed to adapt to external conditions, ensuring user requests are satisfactorily fulfilled. By autonomously evaluating observations, providing feedback on its actions, and continuously executing commands based on ongoing environmental monitoring, this system significantly reduces the need for user intervention. Consequently, LA-RCS interprets user natural language commands and translates them into commands compatible with the robot's interface, enabling the robot to execute the tasks. We categorized the scenarios that LA-RCS needs to perform into four distinct types and conducted a quantitative assessment of its performance in each scenario. The results showed an average success rate of 85%, demonstrating the system's capability to fulfill user requests satisfactorily. For more extensive results, please visit our project page: <a href="https://github.com/LA-RCS/LA-RCS.github.io" target="_blank">Github</a>
         </div>
     </div>
 </div>
 
 ---
 ## Request : Move forward avoiding obstacles
-![Test1](/static/image/test1.gif)
-![Test2](/static/image/test2.gif)
-![Test3](/static/image/test3.gif)
-![Test4](/static/image/test4.gif)
+![Test1](/static/image/test1.gif){: style="width:48%;" }
+![Test2](/static/image/test2.gif){: style="width:48%;" }
+![Test3](/static/image/test3.gif){: style="width:48%;" }
+![Test4](/static/image/test4.gif){: style="width:48%;" }
 
 ---
 ## Request : Turn 360 degree
 
-![Test-360 1](/static/image/test9.gif)
-![Test-360 2](/static/image/test10.gif)
-![Test-360 3](/static/image/test11.gif)
-![Test-360 4](/static/image/test12.gif)
-
----
+![Test-360 1](/static/image/test9.gif){: style="width:48%;" }
+![Test-360 2](/static/image/test10.gif){: style="width:48%;" }
+![Test-360 3](/static/image/test11.gif){: style="width:48%;" }
+![Test-360 4](/static/image/test12.gif){: style="width:48%;" }
 
 ---
 ## Request : Move around and find out where the refrigerator is
-<img src="/static/image/test5.gif" alt="Test-r10" class="Test-r">
-<img src="/static/image/test6.gif" alt="Test-r20" class="Test-r">
-<img src="/static/image/test7.gif" alt="Test-r30" class="Test-r">
-<img src="/static/image/test8.gif" alt="Test-r40" class="Test-r">
-
-![Test-r10](/static/image/test5.gif){: style="width:300px; height:200px;" }
-![Test-r20](/static/image/test6.gif){: style="width:300px; height:200px;" }
-![Test-r30](/static/image/test7.gif){: style="width:300px; height:200px;" }
-![Test-r40](/static/image/test8.gif){: style="width:300px; height:200px;" }
-
+![Test-r10](/static/image/test5.gif){: style="width:24%;" }
+![Test-r20](/static/image/test6.gif){: style="width:24%;" }
+![Test-r30](/static/image/test7.gif){: style="width:24%;" }
+![Test-r40](/static/image/test8.gif){: style="width:24%;" }
 ---
 
 
