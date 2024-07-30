@@ -2,15 +2,13 @@
 layout: project_page
 permalink: /
 
-title: LA-RCS (LLM-Agent Based Robot Operating System)
+title: LA-RCS (LLM-Agent Based Robot Control System)
 authors:
-    Teak-Hyun Park, Seung-Hun Shin, Young-Jun Choi
+    Teak-Hyun Park, Seung-Hun Shin, Young-Jun Choi, , Kwangil Lee
 affiliations:
-    National Korea Maritime & Ocean University
+    National Korea Maritime & Ocean University, Republic of Korea Navy
 paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
-video: https://www.youtube.com/results?search_query=turing+machine
-code: https://github.com/topics/turing-machines
-data: https://huggingface.co/docs/datasets
+code: https://github.com/Forharu40/kmou2024_team3_robot
 ---
 
 <!-- Using HTML to center the abstract -->
@@ -18,102 +16,104 @@ data: https://huggingface.co/docs/datasets
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control system designed to autonomously plan, task, and analyze external environments based on user requirements, leveraging an LLM-Agent. Utilizing a dual-agent framework, LA-RCS generates plans based on user requests, executes these plans while observing the external environment, and modifies the plans as needed to adapt to external conditions, ensuring user requests are satisfactorily fulfilled. By autonomously evaluating observations, providing feedback on its actions, and continuously executing commands based on ongoing environmental monitoring, this system significantly reduces the need for user intervention. Consequently, LA-RCS interprets user natural language commands and translates them into commands compatible with the robot's interface, enabling the robot to execute the tasks. We categorized the scenarios that LA-RCS needs to perform into four distinct types and conducted a quantitative assessment of its performance in each scenario. The results showed an average success rate of 85%, demonstrating the system's capability to fulfill user requests satisfactorily. For more extensive results, please visit our project page: <a href="https://www.Github.com/blabladd" target="_blank">Github</a>
+LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control system designed to autonomously plan, task, and analyze external environments based on user requirements, leveraging an LLM-Agent. Utilizing a dual-agent framework, LA-RCS generates plans based on user requests, executes these plans while observing the external environment, and modifies the plans as needed to adapt to external conditions, ensuring user requests are satisfactorily fulfilled. By autonomously evaluating observations, providing feedback on its actions, and continuously executing commands based on ongoing environmental monitoring, this system significantly reduces the need for user intervention. Consequently, LA-RCS interprets user natural language commands and translates them into commands compatible with the robot's interface, enabling the robot to execute the tasks. We categorized the scenarios that LA-RCS needs to perform into four distinct types and conducted a quantitative assessment of its performance in each scenario. The results showed an average success rate of 85%, demonstrating the system's capability to fulfill user requests satisfactorily. For more extensive results, please visit our project page: <a href="https://github.com/LA-RCS/LA-RCS.github.io" target="_blank">Github</a>
         </div>
     </div>
 </div>
 
+# System Overview
+
+![Overall](/static/image/Overall.png)
+
+# Result
+
+### Request : Move forward avoiding obstacles
 ---
-## Request : Move forward avoiding obstacles
-![Test1](/static/image/test1.gif)
-![Test2](/static/image/test2.gif)
-![Test3](/static/image/test3.gif)
-![Test4](/static/image/test4.gif)
+![Test1](/static/image/test1.gif){: style="width:48%;" }
+![Test2](/static/image/test2.gif){: style="width:48%;" }
+![Test3](/static/image/test3.gif){: style="width:48%;" }
+![Test4](/static/image/test4.gif){: style="width:48%;" }
 
+### Request : Turn 360 degree
 ---
-## Request : Turn 360 degree
+![Test-360 1](/static/image/test9.gif){: style="width:48%;" }
+![Test-360 2](/static/image/test10.gif){: style="width:48%;" }
+![Test-360 3](/static/image/test11.gif){: style="width:48%;" }
+![Test-360 4](/static/image/test12.gif){: style="width:48%;" }
 
-![Test-360 1](/static/image/test9.gif)
-![Test-360 2](/static/image/test10.gif)
-![Test-360 3](/static/image/test11.gif)
-![Test-360 4](/static/image/test12.gif)
 
+### Request : Move around and find out where the refrigerator is
 ---
+![Test-r10](/static/image/test5.gif){: style="width:24%;" }
+![Test-r20](/static/image/test6.gif){: style="width:24%;" }
+![Test-r30](/static/image/test7.gif){: style="width:24%;" }
+![Test-r40](/static/image/test8.gif){: style="width:24%;" }
 
+# Case Study
+
+### Request: Look for a box with a monitor that says Bosch.
 ---
-## Request : Move around and find out where the refrigerator is
-<img src="/static/image/test5.gif" alt="Test-r10" class="Test-r">
-<img src="/static/image/test6.gif" alt="Test-r20" class="Test-r">
-<img src="/static/image/test7.gif" alt="Test-r30" class="Test-r">
-<img src="/static/image/test8.gif" alt="Test-r40" class="Test-r">
+![Case1](/static/image/슬라이드5.PNG)
+![Case1](/static/image/슬라이드6.PNG)
 
-![Test-r10](/static/image/test5.gif){: style="width:300px; height:200px;" }
-![Test-r20](/static/image/test6.gif){: style="width:300px; height:200px;" }
-![Test-r30](/static/image/test7.gif){: style="width:300px; height:200px;" }
-![Test-r40](/static/image/test8.gif){: style="width:300px; height:200px;" }
-
+### Request:  Move forward avoiding obstacles.
 ---
+![Case2](/static/image/슬라이드7.PNG)
+![Case2](/static/image/슬라이드8.PNG)
+
+# Evaluation
+
+### Object detection
+
+|  | Request - object detection | GPT-4-Turbo | GPT-4o |
+| --- | --- | --- | --- |
+| 1 | Move around and find out where the refrigerator is. | Success - Step : 6 | Success - Step : 9 |
+| 2 | Find out if there are people around you right now. | Success - Step : 8 | Success - Step : 4 |
+| 3 | Move around and check if there are people around you. | Failure - Step : 20 | Success - Step : 11 |
+| 4 | When you see a square object, move towards it and activate the buzzer. | Success - Step : 4 | Success - Step : 2 |
+| 5 | Find the yellow obstacles and tell me what they say. | Success - Step : 0 | Success - Step : 0 |
 
 
+### Command execution
+
+|  | Request - command execution | GPT-4-Turbo | GPT-4o |
+| --- | --- | --- | --- |
+| 1 | Make a full circle in a square of 0.6 meters in size. | Failure - Step : 5 | Success - Step : 9 |
+| 2 | Lift your head and identify the person's face and describe it. | Success - Step : 3 | Success - Step : 3 |
+| 3 | Spin around twice in place | Success - Step : 1 | Success - Step : 8 |
+| 4 | Move 2 meters in a zigzag pattern at a 30 degree angle. | Success - Step : 5 | Success - Step : 10 |
+| 5 | Move back 0.4 meters and sound the buzzer. Repeat this 5 times. | Success - Step : 12 | Success - Step : 12 |
 
 
+### Obstacle navigation
 
 
+|  | Request - obstacle navigation | GPT-4-Turbo | GPT-4o |
+| --- | --- | --- | --- |
+| 1 | Move forward avoiding obstacles | Failure - Step : 16 | Success - Step : 7 |
+| 2 | Move 2 meters in total, and when an obstacle appears, turn right and activate the buzzer. | Success - Step : 8 | Success - Step : 5 |
+| 3 | Move to find the bossh box while avoiding obstacles | Failure - Step : 15 | Success - Step : 8 |
+| 4 | Rotates around once to observe the surroundings and moves 1 meter in a direction without obstacles | Failure - Step : 5 | Failure - Step : 15 |
+| 5 | After observing an obstacle in front, move behind the observation object, stop, and activate the buzzer. | Failure - Step : 3 | Success - Step : 9 |
 
 
+### Situation awareness
 
+|  | Request - situation awareness | GPT-4-Turbo | GPT-4o |
+| --- | --- | --- | --- |
+| 1 | Describe the features of the object in front | Success - Step : 0 | Success - Step : 0 |
+| 2 | Detects surroundings and describes only blue objects in Korean | Success - Step : 6 | Success - Step : 7 |
+| 3 | Move forward 0.5 meters, observe the surroundings, and tell me the name of the box. | Success - Step : 3 | Success - Step : 7 |
+| 4 | After moving 2 meters, if there is a paper in front of you, print out what is written on the paper. | Failure - Step : 3 | Success - Step : 10 |
+| 5 | Please tell me the contact information of the Ministry of Science and ICT on the paper observed in front. | Failure - Step : 4 | Success - Step : 0 |
 
-
-
-
-
-
-
-
-
-
-
-
-## Background
-The paper "On Computable Numbers, with an Application to the Entscheidungsproblem" was published by Alan Turing in 1936. In this groundbreaking paper, Turing introduced the concept of a universal computing machine, now known as the Turing machine.
-
-## Objective
-Turing's main objective in this paper was to investigate the notion of computability and its relation to the Entscheidungsproblem (the decision problem), which is concerned with determining whether a given mathematical statement is provable or not.
-
-
-## Key Ideas
-1. Turing first presented the concept of a "computable number," which refers to a number that can be computed by an algorithm or a definite step-by-step process.
-2. He introduced the notion of a Turing machine, an abstract computational device consisting of an infinite tape divided into cells and a read-write head. The machine can read and write symbols on the tape, move the head left or right, and transition between states based on a set of rules.
-3. Turing demonstrated that the set of computable numbers is enumerable, meaning it can be listed in a systematic way, even though it is not necessarily countable.
-4. He proved the existence of non-computable numbers, which cannot be computed by any Turing machine.
-5. Turing showed that the Entscheidungsproblem is undecidable, meaning there is no algorithm that can determine, for any given mathematical statement, whether it is provable or not.
-
-![Turing Machine](/static/image/Turing_machine.png)
-
-*Figure 1: A representation of a Turing Machine. Source: [Wiki](https://en.wikipedia.org/wiki/Turing_machine).*
-
-## Table: Comparison of Computable and Non-Computable Numbers
-
-| Computable Numbers | Non-Computable Numbers |
-|-------------------|-----------------------|
-| Rational numbers, e.g., 1/2, 3/4 | Transcendental numbers, e.g., π, e |
-| Algebraic numbers, e.g., √2, ∛3 | Non-algebraic numbers, e.g., √2 + √3 |
-| Numbers with finite decimal representations | Numbers with infinite, non-repeating decimal representations |
-
-He used the concept of a universal Turing machine to prove that the set of computable functions is recursively enumerable, meaning it can be listed by an algorithm.
-
-## Significance
-Turing's paper laid the foundation for the theory of computation and had a profound impact on the development of computer science. The Turing machine became a fundamental concept in theoretical computer science, serving as a theoretical model for studying the limits and capabilities of computation. Turing's work also influenced the development of programming languages, algorithms, and the design of modern computers.
 
 ## Citation
 ```
-@article{turing1936computable,
+@article{LA-RCS (LLM-Agent Based Robot Control System),
   title={On computable numbers, with an application to the Entscheidungsproblem},
-  author={Turing, Alan Mathison},
-  journal={Journal of Mathematics},
-  volume={58},
-  number={345-363},
-  pages={5},
-  year={1936}
+  author={Teak-Hyun Park, Seung-Hun Shin, Young-Jun Choi, , Kwangil Lee},
+  journal={IMETI2024},
+  year={2024}
 }
 ```
