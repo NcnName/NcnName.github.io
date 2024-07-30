@@ -54,3 +54,19 @@ $(document).ready(function() {
     bulmaSlider.attach();
 
 })
+
+function changeImage(sectionIndex) {
+	// Remove 'active' class from all sections
+        const sections = document.querySelectorAll('.section-content');
+        sections.forEach(section => section.classList.remove('active'));
+
+        // Add 'active' class to the selected section
+    	document.getElementById(`section-${sectionIndex}`).classList.add('active');
+
+        // Remove 'active' class from all thumbnails
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
+
+        // Add 'active' class to the selected thumbnail
+	thumbnails[sectionIndex].classList.add('active');
+}
