@@ -25,6 +25,37 @@ LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control s
 
 ![Overall](/static/image/Overall.png)
 
+# Result test
+
+<section>
+    <div class="container">
+        <div id="main-display">
+            <h2>Request : Move forward avoiding obstacles</h2>
+            <img src="static/image/test1.gif" alt="Street 1" class="active">
+            <img src="static/image/test2.gif" alt="Street 1">
+            <img src="static/image/test3.gif" alt="Street 1">
+            <img src="static/image/test4.gif" alt="Street 1">
+            <h2>Request : Turn 360 degree</h2>
+            <img src="static/image/test9.gif" alt="Street 2">
+            <img src="static/image/test10.gif" alt="Street 2">
+            <img src="static/image/test11.gif" alt="Street 2">
+            <img src="static/image/test12.gif" alt="Street 2">
+            <h2>Request : Move around and find out where the refrigerator is</h2>
+            <img src="static/image/test5.gif" alt="Street 3">
+            <img src="static/image/test6.gif" alt="Street 3">
+            <img src="static/image/test7.gif" alt="Street 3">
+            <img src="static/image/test8.gif" alt="Street 3">
+        </div>
+        <div class="thumbnails">
+            <img src="static/image/r1.png" alt="Street 1" class="thumbnail active" onclick="changeImage(0)">
+            <img src="static/image/r2.png" alt="Street 2" class="thumbnail" onclick="changeImage(1)">
+            <img src="static/image/r3.png" alt="Street 3" class="thumbnail" onclick="changeImage(2)">
+        </div>
+    </div>
+</section>
+
+
+
 # Result
 
 ### Request : Move forward avoiding obstacles
