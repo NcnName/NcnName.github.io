@@ -4,8 +4,15 @@ body {
 
 h2 {
   font-family: 'Noto Sans', sans-serif; /* 원하는 폰트 패밀리로 변경 */
-  font-size: 20px; /* 원하는 폰트 크기로 변경 */
+  font-size: 30px; /* 원하는 폰트 크기로 변경 */
   font-weight: bold; /* 원하는 폰트 두께로 변경 */
+}
+
+.light-line {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0; /* 연한 회색 */
+  margin: 20px 0;
 }
 
 .image-group2 img {
