@@ -27,24 +27,30 @@ LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control s
 
 # Result test
 
-<section>
+ <section>
     <div class="container">
         <div id="main-display">
-            <h2>Request : Move forward avoiding obstacles</h2>
-            <img src="static/image/test1.gif" alt="Street 1" class="active">
-            <img src="static/image/test2.gif" alt="Street 1">
-            <img src="static/image/test3.gif" alt="Street 1">
-            <img src="static/image/test4.gif" alt="Street 1">
-            <h2>Request : Turn 360 degree</h2>
-            <img src="static/image/test9.gif" alt="Street 2">
-            <img src="static/image/test10.gif" alt="Street 2">
-            <img src="static/image/test11.gif" alt="Street 2">
-            <img src="static/image/test12.gif" alt="Street 2">
-            <h2>Request : Move around and find out where the refrigerator is</h2>
-            <img src="static/image/test5.gif" alt="Street 3">
-            <img src="static/image/test6.gif" alt="Street 3">
-            <img src="static/image/test7.gif" alt="Street 3">
-            <img src="static/image/test8.gif" alt="Street 3">
+            <div class="section-content active" id="section-0">
+                <h2>Request : Move forward avoiding obstacles</h2>
+                <img src="static/image/test1.gif" alt="Street 1" class="active">
+                <img src="static/image/test2.gif" alt="Street 1">
+                <img src="static/image/test3.gif" alt="Street 1">
+                <img src="static/image/test4.gif" alt="Street 1">
+            </div>
+            <div class="section-content" id="section-1">
+                <h2>Request : Turn 360 degree</h2>
+                <img src="static/image/test9.gif" alt="Street 2">
+                <img src="static/image/test10.gif" alt="Street 2">
+                <img src="static/image/test11.gif" alt="Street 2">
+                <img src="static/image/test12.gif" alt="Street 2">
+            </div>
+            <div class="section-content" id="section-2">
+                <h2>Request : Move around and find out where the refrigerator is</h2>
+                <img src="static/image/test5.gif" alt="Street 3">
+                <img src="static/image/test6.gif" alt="Street 3">
+                <img src="static/image/test7.gif" alt="Street 3">
+                <img src="static/image/test8.gif" alt="Street 3">
+            </div>
         </div>
         <div class="thumbnails">
             <img src="static/image/r1.png" alt="Street 1" class="thumbnail active" onclick="changeImage(0)">
