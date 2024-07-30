@@ -56,17 +56,22 @@ $(document).ready(function() {
 })
 
 function changeImage(sectionIndex) {
-	// Remove 'active' class from all sections
-        const sections = document.querySelectorAll('.section-content');
-        sections.forEach(section => section.classList.remove('active'));
+    // Remove 'active' class from all sections
+    const sections = document.querySelectorAll('.section-content');
+    sections.forEach(section => section.classList.remove('active'));
 
-        // Add 'active' class to the selected section
-    	document.getElementById(`section-${sectionIndex}`).classList.add('active');
+    // Add 'active' class to the selected section
+    document.getElementById(`section-${sectionIndex}`).classList.add('active');
 
-        // Remove 'active' class from all thumbnails
-        const thumbnails = document.querySelectorAll('.thumbnail');
-        thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
+    // Remove 'active' class from all thumbnails
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
 
-        // Add 'active' class to the selected thumbnail
-	thumbnails[sectionIndex].classList.add('active');
+    // Add 'active' class to the selected thumbnail
+    thumbnails[sectionIndex].classList.add('active');
 }
+
+// Initialize by displaying the first section
+document.addEventListener('DOMContentLoaded', () => {
+    changeImage(0);
+});
