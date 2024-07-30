@@ -30,7 +30,6 @@ LA-RCS (LLM-Agent Based Robot Control System) is a sophisticated robot control s
 <section>
     <div class="container">
         <div id="main-display">
-            # abcdefg
             <h2>Request : Move forward avoiding obstacles</h2>
             <img src="static/image/test1.gif" alt="Street 1" class="active">
             <img src="static/image/test2.gif" alt="Street 1">
