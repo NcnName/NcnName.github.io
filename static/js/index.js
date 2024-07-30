@@ -55,23 +55,15 @@ $(document).ready(function() {
 
 })
 
-function changeImage(sectionIndex) {
-    // Remove 'active' class from all sections
-    const sections = document.querySelectorAll('.section-content');
-    sections.forEach(section => section.classList.remove('active'));
+function changeImage(index) {
+    const mainDisplayImages = document.querySelectorAll('#main-display img');
+    const thumbnails = document.querySelectorAll('.thumbnails img');
 
-    // Add 'active' class to the selected section
-    document.getElementById(`section-${sectionIndex}`).classList.add('active');
+    mainDisplayImages.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+    });
 
-    // Remove 'active' class from all thumbnails
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
-
-    // Add 'active' class to the selected thumbnail
-    thumbnails[sectionIndex].classList.add('active');
+    thumbnails.forEach((thumb, i) => {
+        thumb.classList.toggle('active', i === index);
+    });
 }
-
-// Initialize by displaying the first section
-document.addEventListener('DOMContentLoaded', () => {
-    changeImage(0);
-});
