@@ -2,6 +2,13 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+h2 {
+  font-family: 'Noto Sans', sans-serif; /* 원하는 폰트 패밀리로 변경 */
+  font-size: 24px; /* 원하는 폰트 크기로 변경 */
+  font-weight: bold; /* 원하는 폰트 두께로 변경 */
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
